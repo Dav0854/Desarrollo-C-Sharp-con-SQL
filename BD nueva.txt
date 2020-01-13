@@ -1,0 +1,40 @@
+CREACION DE BASE DE DATOS() ' []
+--create database Panpan // NOMBRE DE LA BD
+go // EJECUTAR
+use Panpan // USAR BD
+go
+
+create table personal ( // CREACION DE BD
+idPersonal int primary key identity (1,1) not null,
+Nombre varchar(20),
+Apellido varchar (20),
+Direccion varchar (100),
+EstadoCivil varchar (10),
+Sexo varchar (10),
+telefono int,
+Estado bit, // DESHABILITADO
+Fecha datetime ,
+
+)
+
+drop table personal // BORRAR BD
+go
+
+INSERT into Personal  values ('Karla Maria','Perez Lopez','Carretera Norte','Soltera','F','22222222','1',GETDATE()) // RELLENAR
+
+SELECT * FROM Personal // VISUALIZAR RESULTADO
+GO
+SELECT IdPersonal, Nombre, Apellido, Direccion FROM Personal // SOLO VER ESTAS COLUMNAS 
+
+
+UPDATE Personal set EstadoCivil = 'Casada' // ACTUALIZAR EL DATO ESPECIFICO
+
+Where IdPersonal = 1
+go
+DELETE Personal where IdPersonal = 1  // BORRAR EL DATO DE LA PERSONA ESPECIFICA
+
+UPDATE Personal set EstadoCivil = 'Casada' // ACTUALIZAR LA COLUMNA
+Where IdPersonal = 1
+
+
+gonzalo16

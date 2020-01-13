@@ -1,0 +1,8 @@
+DELETE Cargo
+DELETE DF
+DELETE DPRODU
+DELETE Factura
+DELETE Personal
+DELETE Producto
+DELETE TipoCargo
+DELETE Usuario
